@@ -3,36 +3,326 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>School System - Dashboard</title>
+    <title>Lincoln High School - Student Portal</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
-  <body>
+  <body class="dashboard-page">
     <div class="container">
-      <header>
-        <h1>School System Dashboard</h1>
+      <!-- Header Section - Simplified for Dashboard -->
+      <header class="dashboard-header">
+        <div class="logo-container">
+          <div class="logo">
+            <img
+              src="https://placehold.co/100x100"
+              alt="Lincoln High School Logo"
+            />
+          </div>
+          <div class="school-name">
+            <h1>Lincoln High School</h1>
+            <p class="tagline">Student Portal</p>
+          </div>
+        </div>
         <div class="user-info">
-          Welcome, <span id="user-name">User</span>!
-          <button id="logout-btn">Logout</button>
+          <div class="user-details">
+            <span class="welcome-text">Welcome,</span>
+            <span id="user-name">Student Name</span>
+          </div>
+          <div class="user-actions">
+            <a href="#" class="notifications">
+              <i class="fas fa-bell"></i>
+              <span class="notification-count">3</span>
+            </a>
+            <a href="#" class="messages">
+              <i class="fas fa-envelope"></i>
+              <span class="message-count">5</span>
+            </a>
+            <button id="logout-btn">
+              <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+          </div>
         </div>
       </header>
-      <main class="dashboard-content">
-        <section class="dashboard-card">
-          <h2>Announcements</h2>
-          <p>
-            Welcome to the school system dashboard. This is a protected area
-            that requires login.
-          </p>
-        </section>
-        <section class="dashboard-card">
-          <h2>Upcoming Events</h2>
-          <ul>
-            <li>Parent-Teacher Conference - Next Month</li>
-            <li>School Trip - In two weeks</li>
-            <li>Final Exams - End of semester</li>
+
+      <div class="dashboard-container">
+        <!-- Sidebar Navigation -->
+        <nav class="dashboard-sidebar">
+          <div class="student-profile">
+            <div class="profile-image">
+              <img src="https://placehold.co/150x150" alt="Student Profile" />
+            </div>
+            <div class="student-info">
+              <p class="student-name">Student Name</p>
+              <p class="student-id">ID: 2023456</p>
+              <p class="student-class">Class: 11-B</p>
+            </div>
+          </div>
+
+          <ul class="sidebar-menu">
+            <li class="active">
+              <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-book"></i> Courses</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-chart-line"></i> Grades</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-calendar-alt"></i> Attendance</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-tasks"></i> Assignments</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-calendar-check"></i> Schedule</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-comment-alt"></i> Messages</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-file-alt"></i> Documents</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-cog"></i> Settings</a>
+            </li>
+            <li class="public-site">
+              <a href="index.html"
+                ><i class="fas fa-home"></i> School Website</a
+              >
+            </li>
           </ul>
-        </section>
-      </main>
+        </nav>
+
+        <!-- Main Dashboard Content -->
+        <main class="dashboard-content">
+          <div class="dashboard-welcome">
+            <h2>Student Dashboard</h2>
+            <p class="current-date">Monday, December 4, 2023</p>
+          </div>
+
+          <div class="quick-stats">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="stat-info">
+                <h3>GPA</h3>
+                <p class="stat-value">3.85</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Attendance</h3>
+                <p class="stat-value">96%</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-clipboard-list"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Pending</h3>
+                <p class="stat-value">4 Tasks</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <div class="stat-info">
+                <h3>Merits</h3>
+                <p class="stat-value">15</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-grid">
+            <section class="dashboard-card announcements-card">
+              <div class="card-header">
+                <h3><i class="fas fa-bullhorn"></i> Announcements</h3>
+                <a href="#" class="view-all">View All</a>
+              </div>
+              <div class="announcement">
+                <h4>Final Exam Schedule</h4>
+                <p>
+                  Final exams will begin on December 15. Please check your
+                  schedule and prepare accordingly.
+                </p>
+                <span class="date">Posted: Nov 28, 2023</span>
+              </div>
+              <div class="announcement">
+                <h4>Winter Break</h4>
+                <p>
+                  School will be closed for winter break from December 20 to
+                  January 5.
+                </p>
+                <span class="date">Posted: Nov 25, 2023</span>
+              </div>
+              <div class="announcement">
+                <h4>Library Extended Hours</h4>
+                <p>
+                  The library will extend hours until 7 PM for finals week
+                  preparation.
+                </p>
+                <span class="date">Posted: Nov 24, 2023</span>
+              </div>
+            </section>
+
+            <section class="dashboard-card upcoming-card">
+              <div class="card-header">
+                <h3><i class="fas fa-calendar"></i> Today's Schedule</h3>
+                <a href="#" class="view-all">Full Schedule</a>
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="time">8:00 - 9:30</span>
+                  <div class="schedule-details">
+                    <h4>Advanced Mathematics</h4>
+                    <p>Room 201 | Mr. Peterson</p>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <span class="time">9:45 - 11:15</span>
+                  <div class="schedule-details">
+                    <h4>English Literature</h4>
+                    <p>Room 105 | Mrs. Garcia</p>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <span class="time">11:30 - 12:15</span>
+                  <div class="schedule-details">
+                    <h4>Lunch Break</h4>
+                    <p>Cafeteria</p>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <span class="time">12:30 - 2:00</span>
+                  <div class="schedule-details">
+                    <h4>Physics Lab</h4>
+                    <p>Science Wing | Dr. Wilson</p>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <span class="time">2:15 - 3:45</span>
+                  <div class="schedule-details">
+                    <h4>History</h4>
+                    <p>Room 308 | Ms. Thompson</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="dashboard-card assignments-card">
+              <div class="card-header">
+                <h3><i class="fas fa-tasks"></i> Upcoming Assignments</h3>
+                <a href="#" class="view-all">View All</a>
+              </div>
+              <ul class="assignment-list">
+                <li>
+                  <div class="assignment-details">
+                    <h4>Math: Algebra II Homework - Ch. 7</h4>
+                    <p>Complete problems 1-20 on page 157</p>
+                  </div>
+                  <div class="assignment-meta">
+                    <span class="due-date">Due: Tomorrow</span>
+                    <span class="priority high">High</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="assignment-details">
+                    <h4>Science: Biology Lab Report</h4>
+                    <p>Write up findings from cell structure experiment</p>
+                  </div>
+                  <div class="assignment-meta">
+                    <span class="due-date">Due: Dec 5</span>
+                    <span class="priority medium">Medium</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="assignment-details">
+                    <h4>English: Literature Essay</h4>
+                    <p>5-page analysis of themes in "To Kill a Mockingbird"</p>
+                  </div>
+                  <div class="assignment-meta">
+                    <span class="due-date">Due: Dec 8</span>
+                    <span class="priority medium">Medium</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="assignment-details">
+                    <h4>History: Research Project</h4>
+                    <p>Presentation on a significant historical event</p>
+                  </div>
+                  <div class="assignment-meta">
+                    <span class="due-date">Due: Dec 12</span>
+                    <span class="priority low">Low</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
+
+            <section class="dashboard-card grades-card">
+              <div class="card-header">
+                <h3><i class="fas fa-chart-line"></i> Recent Grades</h3>
+                <a href="#" class="view-all">Full Report</a>
+              </div>
+              <table class="grades-table">
+                <thead>
+                  <tr>
+                    <th>Subject</th>
+                    <th>Assignment</th>
+                    <th>Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Math</td>
+                    <td>Quiz 5</td>
+                    <td class="grade-value">92%</td>
+                  </tr>
+                  <tr>
+                    <td>Science</td>
+                    <td>Lab Experiment</td>
+                    <td class="grade-value">88%</td>
+                  </tr>
+                  <tr>
+                    <td>History</td>
+                    <td>Research Paper</td>
+                    <td class="grade-value">95%</td>
+                  </tr>
+                  <tr>
+                    <td>English</td>
+                    <td>Vocabulary Test</td>
+                    <td class="grade-value">90%</td>
+                  </tr>
+                  <tr>
+                    <td>Art</td>
+                    <td>Portfolio Review</td>
+                    <td class="grade-value">98%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+        </main>
+      </div>
+
+      <footer class="dashboard-footer">
+        <p>&copy; 2023 Lincoln High School. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Help Center</a> | <a href="#">Report an Issue</a> |
+          <a href="#">Privacy Policy</a>
+        </div>
+      </footer>
     </div>
     <script src="auth.js"></script>
+    <script src="dashboard.js"></script>
   </body>
 </html>
