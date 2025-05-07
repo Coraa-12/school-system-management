@@ -13,12 +13,12 @@
   <body>
     <div class="container">
       <!-- Header Section -->
-      <header>
+      <header aria-label="Main Header">
         <!-- Top Header -->
         <div class="top-header">
           <div class="contact-info">
-            <span><i class="fas fa-phone"></i> (555) 123-4567</span>
-            <span><i class="fas fa-envelope"></i> info@lincolnhigh.edu</span>
+            <span><i class="fas fa-phone" aria-hidden="true"></i> (555) 123-4567</span>
+            <span><i class="fas fa-envelope" aria-hidden="true"></i> info@lincolnhigh.edu</span>
           </div>
           <div class="login-links">
             <a href="dashboard.html">Student Portal</a>
@@ -27,13 +27,13 @@
           </div>
         </div>
 
-        <!-- Marquee -->
-        <div class="marquee-container">
-          <marquee behavior="scroll" direction="left">
+        <!-- Announcements (replacing marquee) -->
+        <div class="announcements-container">
+          <div class="announcements-content">
             Welcome to Lincoln High School - Admission for 2024-2025 Academic
             Year Now Open! | Winter Concert on December 10th | Parent-Teacher
             Conference on December 12th
-          </marquee>
+          </div>
         </div>
 
         <!-- Logo and School Name -->
@@ -51,7 +51,7 @@
         </div>
 
         <!-- Main Menu -->
-        <nav class="main-menu">
+        <nav class="main-menu" aria-label="Main Navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="profile.html" class="active">About Us</a></li>
@@ -69,7 +69,7 @@
       <main class="profile-content">
         <div class="page-banner">
           <h2>About Lincoln High School</h2>
-          <nav class="breadcrumbs">
+          <nav class="breadcrumbs" aria-label="Breadcrumbs">
             <a href="index.html">Home</a> &gt; <span>About Us</span>
           </nav>
         </div>
@@ -118,25 +118,25 @@
           <h2>Facts & Figures</h2>
           <div class="fact-cards">
             <div class="fact-card">
-              <i class="fas fa-user-graduate"></i>
+              <i class="fas fa-user-graduate" aria-hidden="true"></i>
               <h3>Students</h3>
               <p class="fact-number">1,200</p>
               <p>Total Enrollment</p>
             </div>
             <div class="fact-card">
-              <i class="fas fa-chalkboard-teacher"></i>
+              <i class="fas fa-chalkboard-teacher" aria-hidden="true"></i>
               <h3>Faculty</h3>
               <p class="fact-number">80</p>
               <p>Dedicated Teachers</p>
             </div>
             <div class="fact-card">
-              <i class="fas fa-book-open"></i>
+              <i class="fas fa-book-open" aria-hidden="true"></i>
               <h3>Classes</h3>
               <p class="fact-number">45</p>
               <p>Course Offerings</p>
             </div>
             <div class="fact-card">
-              <i class="fas fa-award"></i>
+              <i class="fas fa-award" aria-hidden="true"></i>
               <h3>Graduation Rate</h3>
               <p class="fact-number">95%</p>
               <p>College Acceptance</p>
@@ -229,7 +229,7 @@
       </main>
 
       <!-- Footer Section -->
-      <footer>
+      <footer aria-label="Footer">
         <div class="footer-content">
           <!-- Quick Links -->
           <div class="footer-section links">
@@ -250,24 +250,24 @@
           <div class="footer-section contact">
             <h3>Contact Information</h3>
             <p>
-              <i class="fas fa-map-marker-alt"></i> 123 Education Avenue,
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Education Avenue,
               Cityville, State 12345
             </p>
-            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
-            <p><i class="fas fa-fax"></i> (555) 123-4568</p>
-            <p><i class="fas fa-envelope"></i> info@lincolnhigh.edu</p>
-            <p><i class="fas fa-clock"></i> Monday-Friday: 7:30 AM - 3:30 PM</p>
+            <p><i class="fas fa-phone" aria-hidden="true"></i> (555) 123-4567</p>
+            <p><i class="fas fa-fax" aria-hidden="true"></i> (555) 123-4568</p>
+            <p><i class="fas fa-envelope" aria-hidden="true"></i> info@lincolnhigh.edu</p>
+            <p><i class="fas fa-clock" aria-hidden="true"></i> Monday-Friday: 7:30 AM - 3:30 PM</p>
           </div>
 
           <!-- Social Media Links -->
           <div class="footer-section social">
             <h3>Connect With Us</h3>
             <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-youtube"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Visit our YouTube channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
             </div>
             <div class="newsletter">
               <h4>Subscribe to our Newsletter</h4>
