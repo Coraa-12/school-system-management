@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lincoln High School - Student Portal</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body class="dashboard-page">
     <div class="container">
       <!-- Header Section - Simplified for Dashboard -->
-      <header class="dashboard-header">
+      <header class="dashboard-header" aria-label="Dashboard Header">
         <div class="logo-container">
           <div class="logo">
             <img
               src="https://placehold.co/100x100"
-              alt="Lincoln High School Logo"
-            />
+              alt="Lincoln High School Logo">
           </div>
           <div class="school-name">
             <h1>Lincoln High School</h1>
@@ -32,16 +30,16 @@
             <span id="user-name">Student Name</span>
           </div>
           <div class="user-actions">
-            <a href="#" class="notifications">
-              <i class="fas fa-bell"></i>
+            <a href="#" class="notifications" aria-label="Notifications">
+              <i class="fas fa-bell" aria-hidden="true"></i>
               <span class="notification-count">3</span>
             </a>
-            <a href="#" class="messages">
-              <i class="fas fa-envelope"></i>
+            <a href="#" class="messages" aria-label="Messages">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
               <span class="message-count">5</span>
             </a>
-            <button id="logout-btn">
-              <i class="fas fa-sign-out-alt"></i> Logout
+            <button id="logout-btn" type="button">
+              <i class="fas fa-sign-out-alt" aria-hidden="true"></i> Logout
             </button>
           </div>
         </div>
@@ -49,10 +47,10 @@
 
       <div class="dashboard-container">
         <!-- Sidebar Navigation -->
-        <nav class="dashboard-sidebar">
+        <nav class="dashboard-sidebar" aria-label="Dashboard Navigation">
           <div class="student-profile">
             <div class="profile-image">
-              <img src="https://placehold.co/150x150" alt="Student Profile" />
+              <img src="https://placehold.co/150x150" alt="Student Profile">
             </div>
             <div class="student-info">
               <p class="student-name">Student Name</p>
@@ -63,36 +61,34 @@
 
           <ul class="sidebar-menu">
             <li class="active">
-              <a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+              <a href="#"><i class="fas fa-tachometer-alt" aria-hidden="true"></i> Dashboard</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-book"></i> Courses</a>
+              <a href="#"><i class="fas fa-book" aria-hidden="true"></i> Courses</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-chart-line"></i> Grades</a>
+              <a href="#"><i class="fas fa-chart-line" aria-hidden="true"></i> Grades</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-calendar-alt"></i> Attendance</a>
+              <a href="#"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Attendance</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-tasks"></i> Assignments</a>
+              <a href="#"><i class="fas fa-tasks" aria-hidden="true"></i> Assignments</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-calendar-check"></i> Schedule</a>
+              <a href="#"><i class="fas fa-calendar-check" aria-hidden="true"></i> Schedule</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-comment-alt"></i> Messages</a>
+              <a href="#"><i class="fas fa-comment-alt" aria-hidden="true"></i> Messages</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-file-alt"></i> Documents</a>
+              <a href="#"><i class="fas fa-file-alt" aria-hidden="true"></i> Documents</a>
             </li>
             <li>
-              <a href="#"><i class="fas fa-cog"></i> Settings</a>
+              <a href="#"><i class="fas fa-cog" aria-hidden="true"></i> Settings</a>
             </li>
             <li class="public-site">
-              <a href="index.html"
-                ><i class="fas fa-home"></i> School Website</a
-              >
+              <a href="index.html"><i class="fas fa-home" aria-hidden="true"></i> School Website</a>
             </li>
           </ul>
         </nav>
@@ -107,7 +103,7 @@
           <div class="quick-stats">
             <div class="stat-card">
               <div class="stat-icon">
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
               </div>
               <div class="stat-info">
                 <h3>GPA</h3>
@@ -116,7 +112,7 @@
             </div>
             <div class="stat-card">
               <div class="stat-icon">
-                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
               </div>
               <div class="stat-info">
                 <h3>Attendance</h3>
@@ -125,7 +121,7 @@
             </div>
             <div class="stat-card">
               <div class="stat-icon">
-                <i class="fas fa-clipboard-list"></i>
+                <i class="fas fa-clipboard-list" aria-hidden="true"></i>
               </div>
               <div class="stat-info">
                 <h3>Pending</h3>
@@ -134,7 +130,7 @@
             </div>
             <div class="stat-card">
               <div class="stat-icon">
-                <i class="fas fa-trophy"></i>
+                <i class="fas fa-trophy" aria-hidden="true"></i>
               </div>
               <div class="stat-info">
                 <h3>Merits</h3>
@@ -146,8 +142,8 @@
           <div class="dashboard-grid">
             <section class="dashboard-card announcements-card">
               <div class="card-header">
-                <h3><i class="fas fa-bullhorn"></i> Announcements</h3>
-                <a href="#" class="view-all">View All</a>
+                <h3><i class="fas fa-bullhorn" aria-hidden="true"></i> Announcements</h3>
+                <a href="#" aria-label="View all announcements">View All</a>
               </div>
               <div class="announcement">
                 <h4>Final Exam Schedule</h4>
@@ -177,8 +173,8 @@
 
             <section class="dashboard-card upcoming-card">
               <div class="card-header">
-                <h3><i class="fas fa-calendar"></i> Today's Schedule</h3>
-                <a href="#" class="view-all">Full Schedule</a>
+                <h3><i class="fas fa-calendar" aria-hidden="true"></i> Today's Schedule</h3>
+                <a href="#" aria-label="View full schedule">Full Schedule</a>
               </div>
               <div class="schedule-list">
                 <div class="schedule-item">
@@ -221,8 +217,8 @@
 
             <section class="dashboard-card assignments-card">
               <div class="card-header">
-                <h3><i class="fas fa-tasks"></i> Upcoming Assignments</h3>
-                <a href="#" class="view-all">View All</a>
+                <h3><i class="fas fa-tasks" aria-hidden="true"></i> Upcoming Assignments</h3>
+                <a href="#" aria-label="View all assignments">View All</a>
               </div>
               <ul class="assignment-list">
                 <li>
@@ -270,15 +266,15 @@
 
             <section class="dashboard-card grades-card">
               <div class="card-header">
-                <h3><i class="fas fa-chart-line"></i> Recent Grades</h3>
-                <a href="#" class="view-all">Full Report</a>
+                <h3><i class="fas fa-chart-line" aria-hidden="true"></i> Recent Grades</h3>
+                <a href="#" aria-label="View full grade report">Full Report</a>
               </div>
               <table class="grades-table">
                 <thead>
                   <tr>
-                    <th>Subject</th>
-                    <th>Assignment</th>
-                    <th>Grade</th>
+                    <th scope="col">Subject</th>
+                    <th scope="col">Assignment</th>
+                    <th scope="col">Grade</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -314,7 +310,7 @@
         </main>
       </div>
 
-      <footer class="dashboard-footer">
+      <footer class="dashboard-footer" aria-label="Dashboard Footer">
         <p>&copy; 2023 Lincoln High School. All Rights Reserved.</p>
         <div class="footer-links">
           <a href="#">Help Center</a> | <a href="#">Report an Issue</a> |
