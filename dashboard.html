@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School System - Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>School System Dashboard</h1>
+        <div class="user-info">
+          Welcome, <span id="user-name">User</span>!
+          <button id="logout-btn">Logout</button>
+        </div>
+      </header>
+      <main class="dashboard-content">
+        <section class="dashboard-card">
+          <h2>Announcements</h2>
+          <p>
+            Welcome to the school system dashboard. This is a protected area
+            that requires login.
+          </p>
+        </section>
+        <section class="dashboard-card">
+          <h2>Upcoming Events</h2>
+          <ul>
+            <li>Parent-Teacher Conference - Next Month</li>
+            <li>School Trip - In two weeks</li>
+            <li>Final Exams - End of semester</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <script src="auth.js"></script>
+  </body>
+</html>
