@@ -3,29 +3,280 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>School System - Login</title>
+    <title>Lincoln High School - Home</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <div class="login-form">
-        <h1>School System</h1>
-        <form id="loginForm">
-          <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required />
+      <!-- Header Section -->
+      <header>
+        <!-- Top Header -->
+        <div class="top-header">
+          <div class="contact-info">
+            <span><i class="fas fa-phone"></i> (555) 123-4567</span>
+            <span><i class="fas fa-envelope"></i> info@lincolnhigh.edu</span>
           </div>
-          <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required />
+          <div class="login-links">
+            <a href="dashboard.html">Student Portal</a>
+            <a href="#">Staff Portal</a>
+            <a href="#">Parent Portal</a>
           </div>
-          <div class="form-group">
-            <button type="submit">Login</button>
+        </div>
+
+        <!-- Marquee -->
+        <div class="marquee-container">
+          <marquee behavior="scroll" direction="left">
+            Welcome to Lincoln High School - Admission for 2024-2025 Academic
+            Year Now Open! | Winter Concert on December 10th | Parent-Teacher
+            Conference on December 12th
+          </marquee>
+        </div>
+
+        <!-- Logo and School Name -->
+        <div class="logo-container">
+          <div class="logo">
+            <img
+              src="https://placehold.co/100x100"
+              alt="Lincoln High School Logo"
+            />
           </div>
-          <p id="error-message" class="error"></p>
-        </form>
-      </div>
+          <div class="school-name">
+            <h1>Lincoln High School</h1>
+            <p class="tagline">Inspiring Excellence in Education Since 1975</p>
+          </div>
+        </div>
+
+        <!-- Main Menu -->
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="profile.html">About Us</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Faculty</a></li>
+            <li><a href="#">Students</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Main Body Section -->
+      <main>
+        <!-- Slider Section -->
+        <section class="slider-section">
+          <div class="slider">
+            <div class="slide active">
+              <img src="https://placehold.co/1200x400" alt="School Campus" />
+              <div class="slide-content">
+                <h2>Welcome to Lincoln High School</h2>
+                <p>Where Excellence Meets Opportunity</p>
+                <a href="profile.html" class="btn">Learn More</a>
+              </div>
+            </div>
+            <!-- Additional slides would be controlled by JavaScript -->
+          </div>
+          <div class="slider-controls">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- News, Events, and Notice Board Section -->
+        <section class="info-section">
+          <div class="info-container">
+            <!-- Latest News -->
+            <div class="info-box news">
+              <h2>Latest News</h2>
+              <div class="info-content">
+                <div class="info-item">
+                  <img src="https://placehold.co/80x60" alt="News Image" />
+                  <div>
+                    <h3>National Science Award</h3>
+                    <p>
+                      Our students won first place in the National Science
+                      Competition.
+                    </p>
+                    <span class="date">Nov 28, 2023</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <img src="https://placehold.co/80x60" alt="News Image" />
+                  <div>
+                    <h3>New Library Wing</h3>
+                    <p>
+                      The new library wing will open next month with expanded
+                      resources.
+                    </p>
+                    <span class="date">Nov 20, 2023</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <img src="https://placehold.co/80x60" alt="News Image" />
+                  <div>
+                    <h3>Alumni Achievement</h3>
+                    <p>
+                      Class of 2015 alumna Dr. Emma Chen awarded prestigious
+                      research grant.
+                    </p>
+                    <span class="date">Nov 15, 2023</span>
+                  </div>
+                </div>
+                <a href="#" class="view-all">View All News</a>
+              </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="info-box events">
+              <h2>Upcoming Events</h2>
+              <div class="info-content">
+                <div class="info-item">
+                  <div class="event-date">
+                    <span class="month">DEC</span>
+                    <span class="day">10</span>
+                  </div>
+                  <div>
+                    <h3>Winter Concert</h3>
+                    <p>
+                      Annual winter concert featuring choir and band
+                      performances.
+                    </p>
+                    <span class="time">6:00 PM | Auditorium</span>
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="event-date">
+                    <span class="month">DEC</span>
+                    <span class="day">12</span>
+                  </div>
+                  <div>
+                    <h3>Parent-Teacher Conference</h3>
+                    <p>Mid-year progress meetings with teachers.</p>
+                    <span class="time"
+                      >3:00 PM - 7:00 PM | Various Classrooms</span
+                    >
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="event-date">
+                    <span class="month">DEC</span>
+                    <span class="day">15</span>
+                  </div>
+                  <div>
+                    <h3>Final Exams Begin</h3>
+                    <p>First semester final examinations start.</p>
+                    <span class="time">Regular School Hours</span>
+                  </div>
+                </div>
+                <a href="#" class="view-all">View All Events</a>
+              </div>
+            </div>
+
+            <!-- Notice Board -->
+            <div class="info-box notice">
+              <h2>Notice Board</h2>
+              <div class="info-content">
+                <div class="notice-item urgent">
+                  <h3>Important: Schedule Change</h3>
+                  <p>
+                    Due to facility upgrades, classes will dismiss at 2:00 PM on
+                    Friday, December 8.
+                  </p>
+                  <span class="date">Posted: Nov 30, 2023</span>
+                </div>
+                <div class="notice-item">
+                  <h3>Winter Break Schedule</h3>
+                  <p>
+                    School will be closed for winter break from December 20 to
+                    January 5. Classes resume January 6.
+                  </p>
+                  <span class="date">Posted: Nov 25, 2023</span>
+                </div>
+                <div class="notice-item">
+                  <h3>After-School Program Change</h3>
+                  <p>
+                    After-school science program will now meet in Room 214
+                    starting next week.
+                  </p>
+                  <span class="date">Posted: Nov 22, 2023</span>
+                </div>
+                <a href="#" class="view-all">View All Notices</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="footer-content">
+          <!-- Quick Links -->
+          <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="profile.html">About Lincoln High</a></li>
+              <li><a href="#">Academic Calendar</a></li>
+              <li><a href="#">School Policies</a></li>
+              <li><a href="#">Library Resources</a></li>
+              <li><a href="#">Athletics</a></li>
+              <li><a href="#">Arts Program</a></li>
+              <li><a href="#">Career Counseling</a></li>
+              <li><a href="#">Alumni</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div class="footer-section contact">
+            <h3>Contact Information</h3>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Education Avenue,
+              Cityville, State 12345
+            </p>
+            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+            <p><i class="fas fa-fax"></i> (555) 123-4568</p>
+            <p><i class="fas fa-envelope"></i> info@lincolnhigh.edu</p>
+            <p><i class="fas fa-clock"></i> Monday-Friday: 7:30 AM - 3:30 PM</p>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="footer-section social">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="newsletter">
+              <h4>Subscribe to our Newsletter</h4>
+              <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright Information -->
+        <div class="copyright">
+          <p>&copy; 2023 Lincoln High School. All Rights Reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sitemap</a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="auth.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
