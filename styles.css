@@ -37,16 +37,6 @@ header {
   margin-right: 15px;
 }
 
-.login-links a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 15px;
-}
-
-.login-links a:hover {
-  text-decoration: underline;
-}
-
 /* Announcements Container (Marquee Replacement) */
 .announcements-container {
   background-color: #f8f8f8;
