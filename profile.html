@@ -1,67 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lincoln High School - About Us</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
-      <!-- Header Section -->
-      <header aria-label="Main Header">
-        <!-- Top Header -->
-        <div class="top-header">
-          <div class="contact-info">
-            <span><i class="fas fa-phone" aria-hidden="true"></i> (555) 123-4567</span>
-            <span><i class="fas fa-envelope" aria-hidden="true"></i> info@lincolnhigh.edu</span>
-          </div>
-          <div class="login-links">
-            <a href="dashboard.html">Student Portal</a>
-            <a href="#">Staff Portal</a>
-            <a href="#">Parent Portal</a>
-          </div>
-        </div>
-
-        <!-- Announcements (replacing marquee) -->
-        <div class="announcements-container">
-          <div class="announcements-content">
-            Welcome to Lincoln High School - Admission for 2024-2025 Academic
-            Year Now Open! | Winter Concert on December 10th | Parent-Teacher
-            Conference on December 12th
-          </div>
-        </div>
-
-        <!-- Logo and School Name -->
-        <div class="logo-container">
-          <div class="logo">
-            <img
-              src="https://placehold.co/100x100"
-              alt="Lincoln High School Logo">
-          </div>
-          <div class="school-name">
-            <h1>Lincoln High School</h1>
-            <p class="tagline">Inspiring Excellence in Education Since 1975</p>
-          </div>
-        </div>
-
-        <!-- Main Menu -->
-        <nav class="main-menu" aria-label="Main Navigation">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html" class="active">About Us</a></li>
-            <li><a href="#">Academics</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Faculty</a></li>
-            <li><a href="#">Students</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
+      <!-- shared header -->
+      <div data-include="header.html"></div>
 
       <!-- Main Body Section -->
       <main class="profile-content">
@@ -77,7 +29,8 @@
             <div class="school-image">
               <img
                 src="https://placehold.co/600x400"
-                alt="Lincoln High School Building">
+                alt="Lincoln High School Building"
+              />
             </div>
             <div class="school-description">
               <h3>Our Heritage</h3>
@@ -145,7 +98,10 @@
           <h2>School Leadership</h2>
           <div class="admin-team">
             <div class="admin-card">
-              <img src="https://placehold.co/200x200" alt="Principal Dr. Sarah Johnson">
+              <img
+                src="https://placehold.co/200x200"
+                alt="Principal Dr. Sarah Johnson"
+              />
               <h3>Dr. Sarah Johnson</h3>
               <p class="position">Principal</p>
               <p>
@@ -154,7 +110,10 @@
               </p>
             </div>
             <div class="admin-card">
-              <img src="https://placehold.co/200x200" alt="Vice Principal Mr. Robert Davis">
+              <img
+                src="https://placehold.co/200x200"
+                alt="Vice Principal Mr. Robert Davis"
+              />
               <h3>Mr. Robert Davis</h3>
               <p class="position">Vice Principal</p>
               <p>
@@ -163,7 +122,10 @@
               </p>
             </div>
             <div class="admin-card">
-              <img src="https://placehold.co/200x200" alt="Academic Dean Dr. Michael Lee">
+              <img
+                src="https://placehold.co/200x200"
+                alt="Academic Dean Dr. Michael Lee"
+              />
               <h3>Dr. Michael Lee</h3>
               <p class="position">Academic Dean</p>
               <p>
@@ -225,68 +187,12 @@
         </section>
       </main>
 
-      <!-- Footer Section -->
-      <footer aria-label="Footer">
-        <div class="footer-content">
-          <!-- Quick Links -->
-          <div class="footer-section links">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="profile.html">About Lincoln High</a></li>
-              <li><a href="#">Academic Calendar</a></li>
-              <li><a href="#">School Policies</a></li>
-              <li><a href="#">Library Resources</a></li>
-              <li><a href="#">Athletics</a></li>
-              <li><a href="#">Arts Program</a></li>
-              <li><a href="#">Career Counseling</a></li>
-              <li><a href="#">Alumni</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact Information -->
-          <div class="footer-section contact">
-            <h3>Contact Information</h3>
-            <p>
-              <i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Education Avenue,
-              Cityville, State 12345
-            </p>
-            <p><i class="fas fa-phone" aria-hidden="true"></i> (555) 123-4567</p>
-            <p><i class="fas fa-fax" aria-hidden="true"></i> (555) 123-4568</p>
-            <p><i class="fas fa-envelope" aria-hidden="true"></i> info@lincolnhigh.edu</p>
-            <p><i class="fas fa-clock" aria-hidden="true"></i> Monday-Friday: 7:30 AM - 3:30 PM</p>
-          </div>
-
-          <!-- Social Media Links -->
-          <div class="footer-section social">
-            <h3>Connect With Us</h3>
-            <div class="social-icons">
-              <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-              <a href="#" aria-label="Visit our Twitter page"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-              <a href="#" aria-label="Visit our Instagram page"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-              <a href="#" aria-label="Visit our YouTube channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
-              <a href="#" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-            </div>
-            <div class="newsletter">
-              <h4>Subscribe to our Newsletter</h4>
-              <form action="#" method="post">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit">Subscribe</button>
-              </form>
-            </div>
-          </div>
-        </div>
-
-        <!-- Copyright Information -->
-        <div class="copyright">
-          <p>&copy; 2023 Lincoln High School. All Rights Reserved.</p>
-          <div class="footer-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Sitemap</a>
-          </div>
-        </div>
-      </footer>
+      <!-- shared footer -->
+      <div data-include="footer.html"></div>
     </div>
-    <script src="main.js"></script>
+
+    <!-- load includes before main script -->
+    <script src="include.js" defer></script>
+    <script src="main.js" defer></script>
   </body>
 </html>
