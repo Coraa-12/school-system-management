@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lincoln High School – Course Catalog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- shared header -->
+      <div data-include="header.html"></div>
+
+      <!-- Main Content -->
+      <main class="content-page">
+        <div class="page-banner">
+          <h2>Course Catalog</h2>
+          <nav class="breadcrumbs" aria-label="Breadcrumbs">
+            <a href="index.html">Home</a> &gt; <span>Academics</span>
+          </nav>
+        </div>
+
+        <section class="courses-list">
+          <!-- Example Course Card; duplicate for each course -->
+          <div class="course-card">
+            <h3>Biology 101</h3>
+            <p>Introduction to cell biology, genetics, and ecology.</p>
+            <a href="#" class="btn">View Details</a>
+          </div>
+
+          <div class="course-card">
+            <h3>Algebra II</h3>
+            <p>
+              Advanced topics in quadratic equations, functions, and
+              polynomials.
+            </p>
+            <a href="#" class="btn">View Details</a>
+          </div>
+
+          <div class="course-card">
+            <h3>World History</h3>
+            <p>Survey of major global events from ancient to modern times.</p>
+            <a href="#" class="btn">View Details</a>
+          </div>
+
+          <!-- Add more .course-card blocks as needed -->
+        </section>
+      </main>
+
+      <!-- shared footer -->
+      <div data-include="footer.html"></div>
+    </div>
+
+    <!-- includes must load before any page-specific scripts -->
+    <script src="include.js" defer></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
